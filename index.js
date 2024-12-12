@@ -225,6 +225,8 @@ console.log(oneDevideByTwo(13,2))
 // moodToday("happy") ➞ "Today, I am feeling happy"
 // moodToday( ) ➞ "Today, I am feeling neuter"
 
+// function moodToday()
+
 // Exercise 9
 
 // Write a function that validates whether two strings are identical. Make it case insensitive.
@@ -493,3 +495,5 @@ console.log(oneDevideByTwo(13,2))
 
 // Input: s = "race"
 // Output: false
+
+
