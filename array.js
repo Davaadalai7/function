@@ -79,7 +79,7 @@ function makeStrings(arr) {
             rules.push(`${arr[i].name} can go to The Matrix`);
         }
     }
-    return rules
+    return rules;
 }
 
 console.log(
@@ -124,13 +124,14 @@ Examples:
  
 */
 function doubleValues(arr) {
-    let output = []
-    for ( let i = 0; i < arr.length; i++){
-        output.push(arr[i]*2)
+    let output = [];
+    for (let i = 0; i < arr.length; i++) {
+        output.push(arr[i] * 2);
     }
-    return output
+    return output;
 }
-console.log(doubleValues([1,2,3]));
+console.log(doubleValues([1, 2, 3]));
+
 /*
 Write a function called onlyEvenValues which accepts an array and returns a new array with only the even values in the array passed to the function
  
@@ -141,6 +142,37 @@ Examples:
 */
 // function onlyEvenValues(arr) {}
 // console.log(onlyEvenValues([1, 2, 3, 4, 5, 7, 8, 9, 10, 11]));
+
+// typ e1
+function lla() {}
+// type 2
+let uut = () => {};
+
+function onlyEvenValues(arr) {
+    //  arrow function
+    // [1 , 4, 2, 9, 10, 11, 25]
+    const filterd = arr.filter((num) => num % 2 === 0);
+    const mapped = arr.map((num) => {
+        return num * 2;
+    });
+    console.log(filterd);
+    console.log(mapped);
+    // }
+
+    // console.log(onlyEvenValues([1, 2, 3, 4, 5, 7, 8, 9, 10, 11]));
+    // console.log(onlyEvenValues([1, 2, 3]));
+    // console.log(onlyEvenValues([5, 1, 2, 3, 10]));
+
+    let evenValues = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evenValues.push(arr[i]);
+        }
+    }
+    return evenValues;
+}
+
+console.log(onlyEvenValues([1, 2, 3, 4, 5, 7, 8, 9, 10, 11]));
 
 // console.log(filteredNumbers);F
 
@@ -196,6 +228,26 @@ const originalFlavors = [
     "Vanilla Burnt Almond",
 ];
 
+const checkLength =(data)=>{
+    if (data.length == 31){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(checkLength(originalFlavors));
+
+
+
+
+
+originalFlavors.length
+// function isThirtyOneFlavors(arr) {
+//     return arr.map(() => true).length === 31;
+//   }
+  
+//   console.log(isThirtyOneFlavors(originalFlavors));
+  
 /* Task 1: Confirm that the array is exactly 31 flavors. Your function should accept:
  
 (1) an array
