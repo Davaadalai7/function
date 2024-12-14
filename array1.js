@@ -237,11 +237,6 @@ const checkLength =(data)=>{
 }
 console.log(checkLength(originalFlavors));
 
-
-
-
-
-originalFlavors.length
 // function isThirtyOneFlavors(arr) {
 //     return arr.map(() => true).length === 31;
 //   }
